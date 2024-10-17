@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.all-browsers {
+  margin: 0;
+  padding: 5px;
+  background-color: lightgray;
+}
+
+.all-browsers > h1, .browser {
+  margin: 10px;
+  padding: 5px;
+}
+
+.browser {
+  background: white;
+}
+
+.browser > h2, p {
+  margin: 4px;
+  font-size: 90%;
+}
+a:link, a:visited {color: darkgreen;text-decoration: underline;padding: 15px;text-align: center;}a:hover {color: navy;text-decoration: underline;display: inline-block}a:active {color: yellow;background-color: red;text-decoration: underline;}
+p.ex1{font-size: 120%}
+p.ex2{font-size: 60%}
+p.ex3{font-size: 150%;color: green;}
+
+.button {border: 2px;color: gold;padding: 15px 32px;text-align: center;display: inline-block; font-size: 120%;margin: 4px 2px;cursor: pointer;transition-duration: 0.5s}
+.button1 {background-color: #04AA6D;}
+.button1:hover {background-color: black;color: white;} 
+.button2 {background-color: #008CBA;}
+.button2:hover {background-color: black;color: white;}
+.grid-container{display: grid;grid-template-columns: 33% 33% 33%;}
+</style>
+</head>
+<body>
+
+<h1>The article element - Styled with CSS</h1>
+
+<article class="all-browsers">
+  <h1>Most Popular Browsers</h1>
+  <article class="browser">
+    <h2>Google Chrome</h2>
+    <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+  </article>
+  <article class="browser">
+    <h2>Mozilla Firefox</h2>
+    <p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January, 2018.</p>
+  </article>
+  <article class="browser">
+    <h2>Microsoft Edge</h2>
+    <p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet Explorer.</p>
+  </article>
+</article>
+<p>
+  <ul>
+  <li>User <bdi> Neil </bdi> : 100 points</li>
+  <li>User <bdi>إ يان  </bdi> : 50points</li>
+  <li>User <bdi> নীল </bdi> : 100 points</li>
+
+</ul></p><br>
+<bdo dir="rtl">This Text will go from right to left</bdo>
+</p>
+
+<p class="ex1">Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+<p class="ex2"> Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January, 2018.</p>
+<p class="ex3">Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet Explorer.</p>
+
+<p>
+  <button type="button" autofocus onclick="alert('Blue Web')">Click Me</button>
+</p><br>
+
+<form action="/action_page.php" method="get" id="nameform">
+  <label for="fname">First Name</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="fname">Last Name</label>
+  <input type="text"id="lname" name="lname"><br><br>
+  <label for="paddress">Present Address</label>
+  <input type="text" id="padress" name="padress"><br><br>
+  <label for="peradress">Permanent Address</label>
+  <input type="text" id="peradress" name="peradress">
+</form>
+<button type="submit"formtarget="_blank" form="nameform" value="submit">submit</button>
+<button type="reset" value="reset">Reset</button><hr>
+
+<form action="/action_page.php" method="get" id="addressform">
+  <label for="paddress">Present Address</label>
+  <input type="text" id="padress" name="padress"><br><br>
+  <label for="peradress">Permanent Address</label>
+  <input type="text" id="peradress" name="peradress">
+
+<button type="submit"formtarget="_blank">Submit with character encoding</button>
+<button type="submit" formaction="/action_page.php"formenctype="text/plain"formmethod="post"formtarget="_blank">Submit without character encoding</button></form><hr>
+<h1 popover id="myheader">Hello</h1>
+<button popovertarget="myheader"popovertargetaction="show">Click Me</button><hr>
+
+<form action="/action_page.php" method="get">Choose your Favorite Subject:
+  <button class="button button1" name="subject"type="submit" value="Math">Math</button>
+  <button class="button button2" name="subject"type="submit" value="English">English</button>
+</form><hr>
+<p>
+  <canvas id="mycanvas" height="200px" width="200px" style="border: 2px solid black;">This is a canvas</canvas>
+</p>
+
+<div class="grid-container">
+
+  <div style="background-color:yellow;">
+    <h2>London</h2>
+  <p>London is the capital city of England.</p>
+  <p>London has over 13 million inhabitants.</p>
+</div>
+
+<div style="background-color:green">
+    <h2>Oslo</h2>
+  <p>Oslo is the capital city of Norway.</p>
+  <p>Oslo has over 600.000 inhabitants.</p>
+</div>
+
+<div style="background-color:orange;">
+  <h2>Rome</h2>
+  <p>Rome is the capital city of Italy.</p>
+  <p>Rome has almost 3 million inhabitants.</p>
+</div>
+  
+</div>
+
+  
+
+
+
+
+<p>
+        <a href="../../index.html">BLUE WEB</a></p>
+
+</body>
+</html>
+
+

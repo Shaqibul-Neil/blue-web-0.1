@@ -1,0 +1,432 @@
+<!doctype html>
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		table, th, td {text-align: center; border-collapse: collapse;}
+		tr:hover {background-color:rgba(150, 212, 212, 0.4);}
+		th,td{padding:8px;border-bottom: 1px solid black;}
+		th:nth-child(even),td:nth-child(even){background-color: rgba(150, 212, 212, 0.4);}
+		
+		pre {font-family: arial;}
+		del{background-color: tomato;}
+		ins{background-color:yellow; }
+		details > summary{padding: 4px;margin: 2px;color: whitesmoke;background-color: green;border: 2px solid black;width: 200px; box-shadow: 2px 2px 5px green;}
+		details > p {background-color: yellow;color: dark grey;border: 2px solid black; box-shadow: 2px 2px 5px yellow;padding: 4px;margin: 2px}
+		.mydiv {border: 5px outset seagreen;background-color: powderblue;text-align: center;}
+		fieldset{background-color: powderblue; border: 10px groove;}legend{background-color: lightcoral;color: mintcream;padding: 5px 10px 10px;border: 4px solid black;} input{margin: 10px}
+		figure{border: 10px groove;padding: 5px;}
+		figcaption{color: crimson;font-size: 80%;font-family: arial;padding: 5px;text-align: left;}
+		main {margin: 0;padding: 5px;background-color: powderblue;}
+		main > h1, p, .browser {margin: 10px; padding: 5px;}
+		.browser {background: white;}
+		.browser > h2, p {margin: 4px;font-size: 90%;}
+		.spelling-error{text-decoration-line: underline; text-decoration-style: wavy; text-decoration-color: red;}
+		div.mycontainer{width: 90%; overflow:auto; }
+		div.mycontainer div{width: 30%;display: inline-block;}
+
+
+	</style>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Practice</title>
+</head>
+<body>
+	<dialog open>MY PRACTICE</dialog>
+	<h1>table</h1>
+	<table style="width:100%">
+		<caption style="caption-side: top;">MY TABLE</caption>
+		<colgroup>
+			<col span="2";>
+			
+		</colgroup>
+		<tr>
+			<th style="width:70%">ISBN</th>
+			<th>Name</th>
+			<th>Price</th>
+		</tr>
+		<tr style="height:300px">
+			<td>qwerty</td>
+			<td>asdf</td>
+			<td>$123</td>
+		</tr>
+		<tr>
+			<td>asdfg</td>
+			<td>qwer</td>
+			<td>$456</td>
+		</tr>
+	</table>
+	
+<p>The code element<br>The html button <code> defines </code> a clickable button.
+<samp>file not found</samp> press <kbd> ctrl+c </kbd> to continue.the area of e is 2 <var>xabc</var> sq km<br>
+<pre>
+	The code element
+	file not found
+	The html button
+</pre><hr>
+
+The data element
+<ul style="color: darkred;font-size: 200%;">
+	<li style="color: seagreen;font-size: 150%;"><data value="250">Tomato</li>
+		<li><data value="350">Potato</li>
+</ul><hr>
+The datalist element
+
+<form action="/action_page.php" method="get">
+<label for="player">Choose your Fav Player</label>
+	<input list="players" name="player" id="player">
+	<datalist id="players">
+		<option value="ronaldo">
+			<option value="vini jr">
+				<option value="mbapee">
+	</datalist>
+<input type="submit">	
+</form><hr>
+<dl>
+	<dt>bootstrap</dt>
+	<dd>
+		<img src="images/bootstrap.jpg" alt="bootstrap">
+	</dd>
+</dl><hr>
+my fav color is <del> blue</del><ins>green</ins><hr>
+<del cite="https://www.youtube.com/" datetime="2024-10-13T19:44:52Z">deleted</del><hr>
+<cite>Blue Web</cite> By Neil<hr>
+<details>
+	<summary>Lorem Ipsum</summary><br>
+	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+</details><hr>
+<h1>THE DIV ELEMENT</h1>
+<div class="mydiv">
+	<h2>Lorem Ipsum</h2>
+	<p>when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic</p>	
+</div><br>
+
+<form action="pages/mission/action_page.php" id="form5">
+	<fieldset>
+		<legend style="float:right";>Personal Info</legend>
+		<label for="fname">First Name</label>
+		<input type="text" name="fname" id="fname"><br>
+		<label for="lname">Last Name</label>
+		<input type="text" name="lname" id="lname"><br>
+		<label for="email">E-mail</label>
+		<input type="email" name="email" id="email"><br>
+		<label for="number">Mobile Number</label>
+		<input type="number" name="number" id="number"><br>
+		<label for="birthday">DOB</label>
+		<input type="date" name="date" id="date"><br>
+		<input type="submit" value="submit">
+
+	</fieldset>
+	
+</form><hr>
+<form action="pages/mission/action_page.php" method="get" id="form1">
+	<label for="favplayer">Your Favourite Player:</label>
+	<input type="text" name="favplayer" id="favplayer" maxlength="15">
+	<input type="submit" value="submit"><br>
+
+	<label for="name">Player Name:</label>
+	<input type="text" name="name" id="form1" min="5">
+	<input type="submit" value="submit"></form>
+	<hr>
+
+<fieldset form="form1" disabled>
+		<legend style="float:right";>Personal Info</legend>
+		<label for="fname">First Name</label>
+		<input type="text" name="fname" id="fname"><br>
+		<label for="lname">Last Name</label>
+		<input type="text" name="lname" id="lname"><br>
+		<label for="email">E-mail</label>
+		<input type="email" name="email" id="email"><br>
+		<label for="number">Mobile Number</label>
+		<input type="number" name="number" id="number"><br>
+		<label for="birthday">DOB</label>
+		<input type="date" name="date" id="date"><br>
+		<input type="submit" value="submit">
+
+	</fieldset><hr>
+<form action="pages/mission/action_page.php" method="get">
+	<fieldset name="Personal">
+		<label for="fname">First Name</label>
+		<input type="search" name="fname" id="fname">
+		<input type="image" src="images/html.jpg" alt="html.logo">
+	</fieldset><br>
+	
+	
+	<button type="reset" value="reset">reset</button>
+	<input type="submit" value="Submit">
+
+</form><hr>
+<figure>
+	<figcaption>Fig-1 : CSS</figcaption>
+	<img src="images/css.jpg" alt="css.logo">
+	
+</figure><hr>
+<form action="pages/mission/action_page.php" method="get">
+<label for="files">Select files</label>
+<input type="file" name="files" id="files" multiple>
+<input type="submit"><br>
+<label for="countrycode">COuntry Code</label>
+<input type="text" id="countrycode" name="countrycode" pattern="[12-aa]{2}" title="2 letter country code">
+<input type="submit">
+</form><hr>
+A form with a password field that must contain 8 or more characters that are of at least one number, and one uppercase and lowercase letter:
+
+
+<form action="pages/mission/action_page.php" method="get">
+	<label for="password">Password</label>
+	<input type="password" name="password" id="password" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[1-9]{3}"required title="8 or more characters">
+
+	<input type="submit">
+</form><textarea name="comment" form="useform" rows="5" cols="20" placeholder="Enter"></textarea>
+<hr>
+<form action="pages/mission/action_page.php" method="get">
+<input type="radio" name="favlang" id="html" value="html">
+<label for="html">html</label><br>
+<input type="radio" name="favlang" id="css" value="css">
+<label for="css">css</label><br>
+<label for="vol">Volume 0 to 50</label>
+<input type="range" name="vol" id="vol" min="0" max="50"><br>
+<label for="appt">Select Time</label>
+<input type="time" name="appt" id="appt"><br>
+<label for="homepage">Homepage</label>
+<input type="url" name="homepage" id="homepage"><br>
+<label for="week">Week</label>
+<input type="week" name="week" id="week"><br>
+
+<input type="checkbox" name="checkbox" id="checkbox">
+<label for="checkbox">Bike</label><br>
+<input type="checkbox" name="checkbox" id="checkbox">
+<label for="checkbox">Car</label><br>
+<label for="favcolor">Color</label>
+<input type="color" name="favcolor" id="favcolor" value="black"><br>
+
+<input type="submit" value="submit"></form><br>
+<form action="pages/mission/action_page.php" method="get">
+<label for="bwreview">BW REVIEW</label>
+<textarea id="bwreview" name="bwreview" rows="10" cols="50" required></textarea>
+<input type="submit" value="submit"></form><br>
+<label for="disk_c">Disk C usage:</label>
+<meter id="disk_c" value="5" min="0" max="20" high="10" low="6" optimum="50%">5 out of 20</meter>
+<label for="disk_d">Disk D usage:</label>
+<meter id="disk_d" value="0.6" high="10" low="6" optimum="50%">60%</meter>
+<label for="disk_e">Disk E usage:</label>
+<meter id="disk_e" value="0.5" high="7" low="6" optimum="50%">50%</meter><br>
+<label id="file">file progress</label>
+<progress id="file" value="30" max="200">30%</progress><br>
+<label for="foods">fav food</label>
+<select id="foods" name="foods">
+	<optgroup label="Staple foods">
+	<option value="rice">Rice</option>
+	<option value="pulses">Pulses</option>
+	<option value="egg">Egg</option></optgroup>
+	<optgroup label="rich foods">
+		<option value="pasta">pasta</option>
+		<option value="pizza">pizza</option>
+		
+	</optgroup>
+</select><br>
+<ol>
+	<li value="10">rice</li>
+	<li style="list-style-type:lower-alpha;">pizza</li>
+	<li>pasta</li>
+</ol>
+<ul><li style="list-style-type:square">rice</li><li>pizza</li><li>pasta</li></ul>
+Menu<menu><li>rice</li><li>pizza</li><li>pasta</li></menu><br>
+<ul>
+	<li>coffee</li>
+		<li>tea
+			<ul>
+				<li>black tea</li>
+				<li>milk tea</li>
+					<ul>
+						<li>china</li>
+						<li>africa</li>
+					</ul>
+			</ul>
+		</li>
+	<li>qq</li>
+</ul><br>
+<main>
+	<h1>Most Popular Browsers</h1><p>Chrome, Firefox, and Edge are the most used browsers today</p>
+	<article class="browser">
+		<h2>Google Chrome</h2><p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+	</article>
+	<article class="browser">
+		<h2>Mozilla Firefox</h2><p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January, 2018</p>
+	</article>
+</main><br>
+<nav>
+	<a href="index.html">BLUE WEB</a> || 
+	<a href="pages/journey/journey.html"target="_blank">Our Journey</a> || 
+    <a href="pages/mission/mission.html"target="_blank">Our Mission</a> || 
+    <a href="pages/team/team.html"target="_blank">Meet the Heroes Behind the Scenes</a> || 
+    <a href="pricing.html"target="_blank">Pricing Guide</a> || 
+</nav>
+
+<iframe style="border: 2px; height: 400px; width: 800px;" src="index.html"></iframe>
+<picture>
+	<source media="(min-width:850px)" srcset="images/css.jpg">
+	<source media="(min-width:665px)" srcset="images/js.jpg">
+	<img src="images/html.jpg" alt="html.jpg" style="width:auto;">
+</picture>
+<picture>
+	<source media="(min-width:850px)" srcset=images/bootstrap.jpg>
+		<source media="(min-width:650px)" srcset=images/jquery.jpg>
+			<img src="images/wordpress.jpg" alt="wordpress.jpg" style="width:auto;">
+</picture>
+<pre>
+	sdsdfq
+	sdfr
+	sf
+</pre>
+<div style="width:100px;overflow: auto;">
+	<pre>jkfhsbscscjscjdssbsc dfjffjwf ffeffgjvnvkfjs ssjgngjerp</pre>
+	
+</div>
+	<search>
+		<form>
+			<input name="fsrch" id="fsrch">
+		</form>
+	</search>
+<section>
+	<h2>WWF's history</h2>
+	<p>The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.</p>
+</section>
+<section><h2>WWF's Symbol</h2><p>The Panda has become the symbol of <span style="color: darkred; font-size:100px; font-weight: bold;">WWF</span>. The well-known panda logo of WWF originated from a panda named Chi Chi that was transferred from the Beijing Zoo to the <span style="color:blue; font-weight:bold;"> London Zoo</span>. London Zoo in the same year of the establishment of WWF</p></section>
+<label for="Cars">Choose a car</label>
+<select name="cars" id="cars">
+	<optgroup label="German">
+	<option value="volvo">Volvo</option>
+	<option value="porsche">Porsche</option></optgroup>
+	<optgroup label="english">
+		<option value="bike">bike</option>
+		<option value="honda">Honda</option>
+	</optgroup>
+</select>
+H<sub>2</sub>O
+a <sup> 2 </sup> b
+<details>
+	
+	<summary>WWF's Symbol</summary>
+		The Panda has become the symbol of 
+	
+</details>
+<svg width="100" height="100">
+	<circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow"></circle>
+</svg>
+<svg width="400" height="200">
+	<rect x="50" y="20" rx="20" ry="20" width="150" height="150"style="stroke-width:4; stroke:black; fill:yellow; opacity: 0.6;"></rect>
+	
+</svg>
+<svg width="400" height="200">
+	<rect width="400" height="200" style="stroke: black; stroke-width: 8; fill: powderblue;"></rect>
+</svg><br>
+<label for="review">
+	<textarea id="review" name="review" rows="10" cols="20" placeholder="write your review"></textarea>
+	<input type="submit" value="submit" >
+	
+</label><br>
+<p>The U element
+this is a <u class="spelling-error"> goof </u> book.
+<ul style="list-style-type:square;line-height: 300%;">
+	<li>fgrg</li>
+	<li>sfdh</li>
+	<li>bhhgh</li>
+</ul>
+<ul style="list-style-type: disc;line-height: 80%;">
+	<li>fgrg</li>
+	<li>sfdh</li>
+	<li>bhhgh</li>
+</ul>
+<ul style="list-style-type: circle;">
+	<li>fgrg</li>
+	<li>sfdh</li>
+	<ul>
+		<li>ggrtr</li>
+		<li>hhhh</li>
+	</ul>
+	<li>bhhgh</li>
+</ul>
+no time to <wbr>wastewastewastewastewastewastewastewastewastewastewastewaste<wbr> work and work.<hr></p>
+<div class="mycontainer">
+
+<div style="background-color: orangered;">
+	<h2> London </h2>
+		<p> London is the capital city of England. </p>
+ 	 	<p> London has over 13 million inhabitants </p>
+</div>
+
+<div style="background-color: palevioletred;">
+	<h2> Oslo </h2>
+    	<p> Oslo is the capital city of Norway. </p>
+    	<p> Oslo has over 600.000 inhabitants. </p>
+</div>
+
+<div style="background-color: palegreen;">
+	<h2> Rome </h2>
+    	<p> Rome is the capital city of Italy. </p>
+    	<p> Rome has almost 3 million inhabitants. </p>
+</div>
+
+</div>
+<hr>
+<div style="margin:auto; width: 150px; color: navy;  background-color: hotpink;">
+	<p> Rome is the capital city of Italy. </p>
+    	<p> Rome has almost 3 million inhabitants. </p>
+</div>
+
+</p><hr><br><br><br>
+<picture>
+	<source media="(min-width:850px)" srcset="images/html.jpg">
+		<source media="(min-width:500px)" srcset="images/css.jpg">
+			<img src="images/jquery.jpg" alt="jquery-logo">
+</picture><hr>
+<table style="width:50%">
+	<tr>
+		<th style="width:40%"; colspan="2">Name</th>
+		<th>Age</th>
+	</tr>
+	<tr>
+		<td>Shaqibul</td>
+		<td>Neil</td>
+		<td>27</td>
+	</tr>
+</table><hr>
+<table style="width:100%">
+	<tr>
+		<th colspan="5">2022</th>
+	</tr>
+	<tr>
+		<td>Abc</td>
+		<td>Def</td>
+		<td>ghi</td>
+		<td>123</td>
+	</tr>
+	<tr>
+		<td>jkl</th>
+		<td>mno</td>
+		<td>456</td>
+		<td>dfd</td>
+		
+		
+	</tr>
+	<tr>
+		<td>pqr</th>	
+		<td>stw</td>
+		<td>7a7</td>
+		<td>5f5</td>
+
+	</tr>
+	<tr>
+		<td>Abc</td>
+		<td>Def</td>
+		<td>ghi</td>
+		<td>123</td>
+	</tr>
+</table>
+
+
+<p>
+            <a href="index.html">BLUE WEB</a><br>
+</body>
+</html>
